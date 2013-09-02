@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="dialer">Dialer</string>
+    <string name="dialer_desc">Open Dialer</string>
+
+    <string name="wlan_info">WLAN Info</string>
+    <string name="wlan_info_desc">Show WLAN info</string>
+
+</resources>

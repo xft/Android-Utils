@@ -4,5 +4,16 @@
     <string name="app_name">Utils</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    
+    <string name="edit_scheme">Enter the scheme (tel or sip)</string>
+    <string name="edit_number">Enter a number</string>
+    <string name="button_dial">Dial</string>
+    <string name="button_call">Call</string>
+    <string name="button_test">Test</string>
+    <string name="button_phone_sip_setting">Phone SIP Setting</string>
+    <string name="button_safetone_sip_setting">SafeTone SIP Setting</string>
+    <string name="button_phone_sip_call">Phone SIP Call</string>
+    
+    <string name="empty_description"></string>
 
 </resources>
