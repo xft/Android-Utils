@@ -59,8 +59,10 @@ public class DialerFragment extends Fragment implements OnClickListener {
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        outState.putString(ARG_SCHEME, getScheme());
-        outState.putString(ARG_NUMBER, getNumber());
+        mScheme = getScheme();
+        mNumber = getNumber();
+        outState.putString(ARG_SCHEME, mScheme);
+        outState.putString(ARG_NUMBER, mNumber);
     }
     
 	public void call(View view) {
