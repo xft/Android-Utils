@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/info_layout" >
+
+        <!--VERSION-->
+        <LinearLayout
+            android:id="@+id/version"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView android:text="@string/version_label" style="@style/info_label" />
+
+            <!-- VERSION CODENAME -->
+            <LinearLayout android:id="@+id/version_codename" style="@style/entry_layout" >
+                <TextView android:text="@string/version_codename_label" style="@style/info_label" />
+                <TextView android:id="@+id/version_codename_info" style="@style/info_value" />
+            </LinearLayout>
+
+            <!-- VERSION INCREMENTAL -->
+            <LinearLayout android:id="@+id/version_incremental" style="@style/entry_layout" >
+                <TextView android:text="@string/version_incremental_label" style="@style/info_label" />
+                <TextView android:id="@+id/version_incremental_info" style="@style/info_value" />
+            </LinearLayout>
+
+            <!-- VERSION RELEASE -->
+            <LinearLayout android:id="@+id/version_release" style="@style/entry_layout" >
+                <TextView android:text="@string/version_release_label" style="@style/info_label" />
+                <TextView android:id="@+id/version_release_info" style="@style/info_value" />
+            </LinearLayout>
+
+            <!-- VERSION SDK -->
+            <LinearLayout android:id="@+id/version_sdk" style="@style/entry_layout" >
+                <TextView  android:text="@string/version_sdk_label" style="@style/info_label"/>
+                <TextView android:id="@+id/version_sdk_info" style="@style/info_value" />
+            </LinearLayout>
+            
+            <!--VERSION SDK_INT-->
+            <LinearLayout android:id="@+id/version_sdk_int" style="@style/entry_layout">
+                <TextView android:text="@string/version_sdk_int_label" style="@style/info_label" />
+                <TextView android:id="@+id/version_sdk_int_info" style="@style/info_value" />
+            </LinearLayout>
+        </LinearLayout>
+        
+</LinearLayout>

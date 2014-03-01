@@ -6,5 +6,11 @@
 
     <string name="wlan_info">WLAN Info</string>
     <string name="wlan_info_desc">Show WLAN info</string>
+    
+    <string name="android_os_build_info">OS Build Info</string>
+    <string name="android_os_build_info_desc">Android OS build info</string>
+    
+    <string name="downloader">Downloader</string>
+    <string name="downloader_desc">Downloader helper</string>
 
 </resources>

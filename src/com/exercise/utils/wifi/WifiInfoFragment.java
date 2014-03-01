@@ -131,6 +131,8 @@ public class WifiInfoFragment extends Fragment implements OnClickListener {
 		intentFilter.addAction(WifiManager.NETWORK_STATE_CHANGED_ACTION);
 		intentFilter.addAction(WifiManager.RSSI_CHANGED_ACTION);
 		intentFilter.addAction(WifiManager.SUPPLICANT_CONNECTION_CHANGE_ACTION);
+		
+		intentFilter.addAction("android.intent.action.PTT_BUTTON");
         
 		broadcastReceiver = new BroadcastReceiver() {
             @Override
@@ -158,6 +160,8 @@ public class WifiInfoFragment extends Fragment implements OnClickListener {
         	handleNetworkIdsChanged();
         } else if (WifiManager.SUPPLICANT_CONNECTION_CHANGE_ACTION.equals(action)) {
         	handleSupplicantConnectionChange(intent);
+        } else if ("android.intent.action.PTT_BUTTON".equals(action)) {
+        	Log.e(TAG, "Received an android.intent.action.PTT_BUTTON");
         } else {
             Log.e(TAG, "Received an unknown Wifi Intent");
         }

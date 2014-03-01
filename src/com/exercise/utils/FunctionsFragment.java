@@ -19,7 +19,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.exercise.utils.dial.DialerFragment;
+import com.exercise.utils.downloader.DownloaderFragment;
 import com.exercise.utils.wifi.WifiInfoFragment;
+import com.exercise.utils.osBuildInfo.AndroidOsBuildINfo;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -45,6 +47,10 @@ public class FunctionsFragment extends ListFragment {
         		R.drawable.ic_func_dialer, new DialerFragment()));
         funcList.add(new FuncGroup(getActivity(), R.string.wlan_info, R.string.wlan_info_desc, 
         		R.drawable.ic_func_wlan_info, new WifiInfoFragment()));
+        funcList.add(new FuncGroup(getActivity(), R.string.android_os_build_info, R.string.android_os_build_info_desc, 
+        		R.drawable.ic_func_os_build_info, new AndroidOsBuildINfo()));
+        funcList.add(new FuncGroup(getActivity(), R.string.downloader, R.string.downloader_desc, 
+        		R.drawable.ic_func_os_build_info, new DownloaderFragment()));
 
         setListAdapter(new FuncGroupAdapter(getActivity(), funcList));
     }

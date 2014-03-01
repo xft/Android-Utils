@@ -10,6 +10,7 @@ import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -43,6 +44,11 @@ public class DialerFragment extends Fragment implements OnClickListener {
         view.findViewById(R.id.button_dial).setOnClickListener(this);
         view.findViewById(R.id.button_phone_sip_setting).setOnClickListener(this);
         view.findViewById(R.id.button_safetone_sip_setting).setOnClickListener(this);
+        view.findViewById(R.id.button_ptt).setOnClickListener(this);
+        view.findViewById(R.id.button_ptt_stop).setOnClickListener(this);
+        view.findViewById(R.id.button_sos).setOnClickListener(this);
+        view.findViewById(R.id.button_ptt_set).setOnClickListener(this);
+        view.findViewById(R.id.button_sos_set).setOnClickListener(this);
         
         return view;
     }
@@ -130,24 +136,68 @@ public class DialerFragment extends Fragment implements OnClickListener {
 	private Uri getUri() {
 		return Uri.parse(getScheme() + ":" + getNumber());
 	}
+	
+	public void ptt(View view) {
+//		Intent intent = new Intent("net.safetone.intent.action.PTT");
+//
+//		if (canStartActivity(intent))
+//			startActivity(intent);
+		Intent intent = new Intent("android.intent.action.PTT_BUTTON");
+		intent.putExtra(Intent.EXTRA_KEY_EVENT,
+				new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_CAMERA));
+		this.getActivity().sendBroadcast(intent);
+	}
+	
+	public void pttStop(View view) {
+//		Intent intent = new Intent("net.safetone.intent.action.HANGUP");
+//
+//		getActivity().sendBroadcast(intent);
+		
+		Intent intent = new Intent("android.intent.action.PTT_BUTTON");
+		intent.putExtra(Intent.EXTRA_KEY_EVENT,
+				new KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_CAMERA));
+		this.getActivity().sendBroadcast(intent);
+	}
+	
+	public void sos(View view) {
+//		Intent intent = new Intent("net.safetone.intent.action.SOS");
+//
+//		if (canStartActivity(intent))
+//			startActivity(intent);
+		
+		Intent intent = new Intent("android.intent.action.SOS_BUTTON");
+		intent.putExtra(Intent.EXTRA_KEY_EVENT,
+				new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_CAMERA));
+		this.getActivity().sendBroadcast(intent);
+	}
+	
+    public void pttSetting(View view) {
+		Intent intent = new Intent("net.safetone.intent.settings.PTT");
+
+		if (canStartActivity(intent))
+			startActivity(intent);
+	}
+    
+    public void sosSetting(View view) {
+		Intent intent = new Intent("net.safetone.intent.settings.SOS");
+
+		if (canStartActivity(intent))
+			startActivity(intent);
+	}
 
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.button_call:
-			call(v);
-			break;
-		case R.id.button_dial:
-			dial(v);
-			break;
-		case R.id.button_phone_sip_setting:
-			phoneSipSetting(v);
-			break;
-		case R.id.button_safetone_sip_setting:
-			safetoneSipSetting(v);
-			break;
-		default:
-			break;
+		case R.id.button_call: call(v); break;
+		case R.id.button_dial: dial(v); break;
+		case R.id.button_phone_sip_setting: phoneSipSetting(v); break;
+		case R.id.button_safetone_sip_setting: safetoneSipSetting(v); break;
+		case R.id.button_ptt: ptt(v); break;
+		case R.id.button_ptt_stop: pttStop(v); break;
+		case R.id.button_sos: sos(v); break;
+		case R.id.button_ptt_set: pttSetting(v); break;
+		case R.id.button_sos_set: sosSetting(v); break;
+		default: break;
 		}
 	}
 }

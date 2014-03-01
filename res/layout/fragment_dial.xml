@@ -46,7 +46,52 @@
         android:id="@+id/button_safetone_sip_setting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="safetoneSipSetting"
         android:text="@string/button_safetone_sip_setting" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_ptt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_ptt" />
+        
+        <Button
+            android:id="@+id/button_ptt_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_ptt_stop" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/button_sos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_sos" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_ptt_set"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_ptt_set" />
+
+        <Button
+            android:id="@+id/button_sos_set"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_sos_set" />
+    </LinearLayout>
 
 </LinearLayout>

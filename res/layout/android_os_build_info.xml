@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout style="@style/info_layout">
+
+        <!--BOARD-->
+        <LinearLayout android:id="@+id/board" style="@style/entry_layout" >
+            <TextView android:text="@string/board_label" style="@style/info_label" />
+            <TextView android:id="@+id/board_info" style="@style/info_value" />
+        </LinearLayout>
+
+        <!--BOOTLOADER-->
+        <LinearLayout android:id="@+id/bootloader" style="@style/entry_layout">
+            <TextView android:text="@string/bootloader_label" style="@style/info_label" />
+            <TextView android:id="@+id/bootloader_info" style="@style/info_value" />
+        </LinearLayout>
+
+        <!--BRAND-->
+        <LinearLayout android:id="@+id/brand" style="@style/entry_layout">
+            <TextView android:text="@string/brand_label" style="@style/info_label" />
+            <TextView android:id="@+id/brand_info" style="@style/info_value" />
+        </LinearLayout>
+
+        <!--CPU_ABI-->
+        <LinearLayout android:id="@+id/cpu_abi" style="@style/entry_layout">
+            <TextView android:text="@string/cpu_abi_label" style="@style/info_label" />
+            <TextView android:id="@+id/cpu_abi_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--CPU_ABI2-->
+        <LinearLayout android:id="@+id/cpu_abi2" style="@style/entry_layout">
+            <TextView android:text="@string/cpu_abi2_label" style="@style/info_label" />
+            <TextView android:id="@+id/cpu_abi2_info" style="@style/info_value" />
+        </LinearLayout>
+
+        <!--DEVICE-->
+        <LinearLayout android:id="@+id/device" style="@style/entry_layout">
+            <TextView android:text="@string/device_label" style="@style/info_label" />
+            <TextView android:id="@+id/device_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--DISPLAY-->
+        <LinearLayout android:id="@+id/display" style="@style/entry_layout">
+            <TextView android:text="@string/display_label" style="@style/info_label" />
+            <TextView android:id="@+id/display_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--FINGERPRINT-->
+        <LinearLayout android:id="@+id/fingerprint" style="@style/entry_layout">
+            <TextView android:text="@string/fingerprint_label" style="@style/info_label" />
+            <TextView android:id="@+id/fingerprint_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--HARDWARE-->
+        <LinearLayout android:id="@+id/hardware" style="@style/entry_layout">
+            <TextView android:text="@string/hardware_label" style="@style/info_label" />
+            <TextView android:id="@+id/hardware_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--HOST-->
+        <LinearLayout android:id="@+id/host" style="@style/entry_layout">
+            <TextView android:text="@string/host_label" style="@style/info_label" />
+            <TextView android:id="@+id/host_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--ID-->
+        <LinearLayout android:id="@+id/id" style="@style/entry_layout">
+            <TextView android:text="@string/id_label" style="@style/info_label" />
+            <TextView android:id="@+id/id_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--MANUFACTURER-->
+        <LinearLayout android:id="@+id/manufacturer" style="@style/entry_layout">
+            <TextView android:text="@string/manufacturer_label" style="@style/info_label" />
+            <TextView android:id="@+id/manufacturer_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--MODEL-->
+        <LinearLayout android:id="@+id/model" style="@style/entry_layout">
+            <TextView android:text="@string/model_label" style="@style/info_label" />
+            <TextView android:id="@+id/model_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--PRODUCT-->
+        <LinearLayout android:id="@+id/product" style="@style/entry_layout">
+            <TextView android:text="@string/product_label" style="@style/info_label" />
+            <TextView android:id="@+id/product_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--RADIO-->
+        <LinearLayout android:id="@+id/radio" style="@style/entry_layout">
+            <TextView android:text="@string/radio_label" style="@style/info_label" />
+            <TextView android:id="@+id/radio_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--SERIAL-->
+        <LinearLayout android:id="@+id/serial" style="@style/entry_layout">
+            <TextView android:text="@string/serial_label" style="@style/info_label" />
+            <TextView android:id="@+id/serial_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--TAGS-->
+        <LinearLayout android:id="@+id/tags" style="@style/entry_layout">
+            <TextView android:text="@string/tags_label" style="@style/info_label" />
+            <TextView android:id="@+id/tags_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--TIME-->
+        <LinearLayout android:id="@+id/time" style="@style/entry_layout">
+            <TextView android:text="@string/time_label" style="@style/info_label" />
+            <TextView android:id="@+id/time_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--TYPE-->
+        <LinearLayout android:id="@+id/type" style="@style/entry_layout">
+            <TextView android:text="@string/type_label" style="@style/info_label" />
+            <TextView android:id="@+id/type_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--USER-->
+        <LinearLayout android:id="@+id/user" style="@style/entry_layout">
+            <TextView android:text="@string/user_label" style="@style/info_label" />
+            <TextView android:id="@+id/user_info" style="@style/info_value" />
+        </LinearLayout>
+        
+        <!--VERSION-->
+        <include layout="@layout/android_os_build_version_info" />
+        
+    </LinearLayout>
+</ScrollView>

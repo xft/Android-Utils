@@ -9,10 +9,15 @@
     <string name="edit_number">Enter a number</string>
     <string name="button_dial">Dial</string>
     <string name="button_call">Call</string>
-    <string name="button_test">Test</string>
+    <string name="button_ptt_set">PTT Settings</string>
+    <string name="button_sos_set">SOS Settings</string>
     <string name="button_phone_sip_setting">Phone SIP Setting</string>
     <string name="button_safetone_sip_setting">SafeTone SIP Setting</string>
     <string name="button_phone_sip_call">Phone SIP Call</string>
+    
+    <string name="button_ptt">PTT</string>
+    <string name="button_ptt_stop">Stop PTT</string>
+    <string name="button_sos">SOS</string>
     
     <string name="empty_description"></string>
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="board_label">BOARD:</string>
+    <string name="bootloader_label">BOOTLOADER:</string>
+    <string name="brand_label">BRAND:</string>
+    <string name="cpu_abi_label">CPU_ABI:</string>
+    <string name="cpu_abi2_label">CPU_ABI2:</string>
+    <string name="device_label">DEVICE:</string>
+    <string name="display_label">DISPLAY:</string>
+    <string name="fingerprint_label">FINGERPRINT:</string>
+    <string name="hardware_label">HARDWARE:</string>
+    <string name="host_label">HOST:</string>
+    <string name="id_label">ID:</string>
+    <string name="manufacturer_label">MANUFACTURER:</string>
+    <string name="model_label">MODEL:</string>
+    <string name="product_label">PRODUCT:</string>
+    <string name="radio_label">RADIO:</string>
+    <string name="serial_label">SERIAL:</string>
+    <string name="tags_label">TAGS:</string>
+    <string name="time_label">TIME:</string>
+    <string name="type_label">TYPE:</string>
+    <string name="user_label">USER:</string>
+    <string name="version_label">VERSION:</string>
+    <string name="version_codename_label">"	CODENAME:"</string>
+    <string name="version_incremental_label">"	INCREMENTAL:"</string>
+    <string name="version_release_label">"	RELEASE:"</string>
+    <string name="version_sdk_label">"	SDK:"</string>
+    <string name="version_sdk_int_label">"	SDK_INT:"</string>
+    <string name="version_codes_label">"VERSION_CODES:"</string>
+    
+    
+</resources>
